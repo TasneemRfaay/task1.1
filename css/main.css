@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+
+}
+.headers{
+   
+        color: #101828;
+        font-size:42px;
+        line-height: 50px;
+    
+}
+/* -------------------------------NavBar------------------------------- */
+nav{
+    display: flex;
+    flex-direction: row; 
+    -ms-flex-align: stretch;
+    color: #FFFFFF;
+    background-color: #0B9586;
+    justify-content:space-around;
+    align-items: center;
+    height: 10vh;
+    z-index: -1;
+    font-size: 20px;
+}
+nav img{
+    width: 200px;
+}
+ul{
+    list-style: none;
+   text-align: center;
+}
+nav li{
+    display: inline-block;
+    padding: 15px 25px;
+   
+}
+nav li:hover{
+    background-color: #0000000F;
+    border-bottom: 3px solid #0000004D;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-weight: bolder;
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+#phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+ /* media query for NavBar */
+ @media screen and (max-width: 850px){
+  nav{
+      flex-direction: column !important;
+      align-items: center;
+      height: 50vh;
+  } 
+  nav li{
+      display: block;
+
+  }
+  #phone {
+      align-items: center;
+  }
+ }
+/* ------------------------------------------homeContent---------------------------- */
+#homeContent{
+    height:90vh;
+    background-image: url(/img/solar-panels-meadow\ 1.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+}
+#homeContent #content{
+    position: absolute;
+    left: 15%;
+    top: 35%;
+    width:45%
+}
+#homeContent #content h1{
+font-size: 52px;
+line-height: 62px;
+}
+#homeContent #content h5{
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+}
+#homeContent #content button ,.btn{
+    margin: 20px 0;
+    padding: 7px 35px;
+    outline: transparent;
+    border: transparent;
+    border-radius:15px ;
+    -webkit-border-radius:15px ;
+    -moz-border-radius:15px ;
+    -ms-border-radius:15px ;
+    -o-border-radius:15px ;
+}
+#btn1{
+    background-color: #3CAB90;
+    margin-right: 20px;
+    color: white;
+}
+
+.btn2{
+    background-color: #FFBB1C;
+}
+
+ /* media query for home content*/
+ @media screen and (max-width: 850px){
+    #homeContent #content{
+        left: 30%;
+    }
+ }
+
+ /* ------------------------trade---------------------- */
+ .trade{
+     width: 90%;
+     margin: 5% auto;
+     display: flex;
+     flex-direction: row;
+     justify-content:space-evenly;
+     align-content: stretch;
+    
+ }
+ .trade #tradeContent {
+     width: 47%;
+ }
+
+.trade #tradeContent p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #616774;
+    margin-top: 20px;
+}
+.trade #tradeContent ul{
+    list-style: none;
+    font-size: 20px;
+    line-height: 30px;
+    color:#101828;
+    margin-top: 40px;
+
+}
+.trade #tradeContent li{
+    display: block;
+    text-align: start;
+}
+.trade #tradeContent li span{
+    color: #84BD3A;
+    font-weight: 500;
+}
+#tradeImg{
+    width: 47%;
+    position: relative;
+    text-align: center;
+}
+#tradeImg img{
+    width: 60%;
+}
+#tradeImg #innerImg{
+    position: absolute;
+    top: 50%;
+    left: 14%;
+}
+#tradeImg #innerImg img{
+    width: 100%;
+}
+
+ /* media query for Trade*/
+ @media screen and (max-width: 1500px){
+    #tradeImg #innerImg{
+    top:40%
+    }
+ }
+
+ @media screen and (max-width: 1100px){
+    #tradeImg #innerImg{
+    top:30%;
+    left:10%;
+    }
+    #tradeImg #innerImg img{
+     width:80%;
+    }
+ }
+ @media screen and (max-width: 1000px){
+    .trade{
+    flex-direction: column;
+    align-items: center;
+    }
+    #tradeContent ,#tradeImg{
+        width: 100%;
+    }
+    #tradeImg #innerImg {
+        width:50%;
+        top:50%;
+
+    }
+ }
+
+ /* ---------------------power---------------------- */
+ .power{
+     height: max-content;
+     padding: 10%;
+     background-image: url(/img/8116\ 1.png);
+     background-position: center center;
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     color: white;
+     margin-bottom: 5%;
+ }
+ .power #powerContent{
+     width: 55%;
+ }
+
+ .power h6{
+    margin-top: 5%;
+     font-size: 20px;
+     line-height: 28px;
+     font-weight: 400;
+ }
+ .power button{
+     font-size: 14px;
+     font-weight: 400;
+ }
+
+ /* --------------------solarKits--------------------- */
+ .solarKits{
+     text-align: center;
+     width: 80%;
+     margin: 5% auto ;
+ }
+ .solarKits h2{
+     margin-bottom: 3%;
+ }
+ .solarKits h5{
+    font-size: 14px;
+    line-height: 20px;
+    color:#475467; 
+ }
+ .solarKits .powerContent{
+     width: 100%;
+     margin: auto;
+     display: flex;
+     flex-direction: row;
+     text-align: start;
+     justify-content: space-between;
+ }
+ .solarKits .powerContent a{
+     color: #3CAB90;
+     text-decoration: none;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 24px;
+
+ }
+ .solarKits .powerContent p{
+     color:#475467;
+     line-height: 24px;
+     font-size: 16px;
+ }
+ .solarKits .powerContent h5{
+     color:#101828;
+     font-size: 20px;
+     line-height: 30px;
+ }
+ .solarKits .powerContent .content{
+     margin-top: 5%;
+   box-shadow: 0px 0px 13px 1px #9b9fa6;
+   width: 30%;
+   text-align: start;
+ }
+ .solarKits .powerContent .content img{
+     width: 100%;
+ }
+
+
+ /* media query for solarKits*/
+ @media screen and (max-width: 700px){
+    .solarKits .powerContent{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .solarKits .powerContent .content{
+        width: 80%;
+    }
+
+ }
+ /* -----------------------repairs-------------- */
+ .repairs {
+     background-image: url(/img/8116\ 1\ \(1\).png);
+     background-position: center center;
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     padding: 5%;
+     color: white;
+     /* margin-bottom: 5%; */
+ }
+ .repairsContent{
+     background-color: rgba(0, 0, 0, 0.671);
+     width: 60%;
+     text-align: center;
+     margin: auto;
+     padding: 3%;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+
+}
+.repairsContent p{
+margin-top: 15px;
+font-size: 16px;
+line-height: 30px;
+font-weight: 400;
+}
+
+/* --------------------------energy------------------- */
+.energy{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: auto;
+
+}
+#energy{
+    background-color: #FFBB1C0D;
+    padding: 5%;
+
+}
+aside{
+    width: 30%;
+    padding:2% 0;
+}
+.energy .content{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: stretch; */
+}
+.energy .energyContent{
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+    /* position: relative; */
+    
+}
+.energy img{
+    /* background: radial-gradient( rgba(2,0,36,1) 50%, rgba(9,9,121,1) 50%); */
+    background-color: #3CAB90;
+    padding: 15px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+
+}
+.energy .energyContent img{
+    border: none;
+    width: 100%;
+    background-color:transparent;
+    z-index: -999;
+}
+
+.layer{
+    background-color: #3CAB900D;
+    border:3px solid #3CAB90;
+    /*position: absolute;
+    */width: 100%;
+    height: 100%;
+    z-index: 10;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.energyContent h5{
+font-size: 20px;
+line-height: 30px;
+color: #101828;
+}
+.energyContent p{
+    font-size: 16px;
+    line-height: 26px;
+    margin:6% 0;
+    color: #475467;
+}
+.energy p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #475467;
+    margin-top: 5%;
+}
+
+/* media query energy */
+@media screen and (max-width: 800px){
+    .energy{
+        flex-direction: column;
+        align-items: center;
+    }
+    .energy aside{
+        width: 80%;
+    }
+    .energy .content{
+        width: 80%;
+        align-items: center;
+    }
+    .energy .energyContent{
+        width: 80%;
+    }
+
+}
+
+/* ---------------------values------------------- */
+.valuesContent{
+    width: 80%;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.values{
+    text-align: center;
+}
+.valuesContent .content{
+    text-align: start;
+    width: 30%;
+    padding: 10px;
+    background-color: #3CAB900D;
+    border:3px solid #3CAB90;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 2%;
+}
+.valuesContent .content h4{
+    margin: 5% 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: #101828;
+}
+
+.valuesContent .content {
+    margin: 3% 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #475467;
+}
+
+/* media query values */
+@media screen and (max-width: 700px){
+    .valuesContent{
+       flex-direction: column;
+       align-items: center;
+
+    }
+    .valuesContent .content{
+      width: 90%;
+    }
+}
+
+/* -------------------users----------------- */
+.users{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+.users .content{
+    width: 30%;
+    
+}
+.users .content p {
+    color: #1C1C1C;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.users .carsoul{
+   width: 60%;
+   background-color: #3CAB900D;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   padding: 2%;
+}
+.caContent p{
+    color: #101828;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+
+}
+.caContent .p{
+    color: #3CAB90;
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+.caData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:baseline;
+}
+.caData .data{
+    display: flex;
+    flex-direction: row;
+}
+.caData h5{
+font-weight: 700;
+font-size: 18px;
+color: #1C1C1C;
+}
+.caData p{
+color: #1C1C1C;
+font-weight: 400;
+font-size: 16px;
+}
+
+/* media query for Users  */
+
+@media screen and (max-width: 700px){
+    .users{
+       flex-direction: column;
+        align-items: center;
+    }
+    .users .content{
+        width: 80%;
+        
+    }
+    .users .carsoul{
+        width: 80%;
+    }
+    .caData {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+/* ----------------footer---------------- */
+footer{
+background-color: #283646;
+padding: 5% ;
+
+}
+.footer{
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 90%;
+margin: auto;
+}
+footer ul{
+    list-style: none;
+
+}
+footer li{
+    display: inline-block;
+    color: white;
+    padding: 15px;
+}
+.footer1, .footer2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-around;
+    color: white;
+    width: 48%;
+  
+}
+
+.footer2{
+    align-items: center;
+}
+input {
+    background-color: transparent;
+    border: 1px solid #FFFFFF17;
+}
+input, .form .btn2{
+    padding: 8px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.form .btn2{
+    margin-left: -29px;
+    border: transparent;
+   
+}
+.line{
+    width: 100%;
+    border-bottom: 1px solid #FFFFFF17;
+    margin: 3% 0;
+}
+.copyRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.copyRight p{
+color: #FFFFFF17;
+margin:0 5%;
+font-size: 12px;
+}
